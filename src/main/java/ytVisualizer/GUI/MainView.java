@@ -15,8 +15,8 @@ public class MainView extends Stage implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         GridPane root = new MainViewController();
-        this.setTitle("Youtube to Mp3 trop stylé");
-        this.setScene(new Scene(root, 1680, 1050));
+        this.setTitle("Youtube Visualizer");
+        this.setScene(new Scene(root, 1280, 720));
         this.show();
     }
 }

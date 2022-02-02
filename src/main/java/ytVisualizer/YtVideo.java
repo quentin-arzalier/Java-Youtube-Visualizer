@@ -1,6 +1,7 @@
 package ytVisualizer;
 
 import javafx.scene.image.Image;
+import javafx.scene.media.Media;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
@@ -13,6 +14,7 @@ public class YtVideo {
 
     private String title;
     private Image thumbnail;
+    private Media media;
 
     public YtVideo(String video){
         try {

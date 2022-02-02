@@ -8,6 +8,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
 import ytVisualizer.YtVideo;
 
 import java.io.IOException;
@@ -25,6 +27,11 @@ public class MainViewController extends GridPane {
 
     @FXML
     private TextField urlInput;
+
+    @FXML
+    private MediaView media;
+
+    private MediaPlayer player;
 
     public MainViewController() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/MainView.fxml"));
@@ -44,7 +51,7 @@ public class MainViewController extends GridPane {
         String url = urlInput.getText();
         urlInput.clear();
         YtVideo vid = new YtVideo(url);
-        thumbnail = new ImageView(vid.getThumbnail());
+        thumbnail.setImage(vid.getThumbnail());
         title.setText(vid.getTitle());
     }
 }
