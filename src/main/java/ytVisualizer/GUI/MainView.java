@@ -17,6 +17,7 @@ public class MainView extends Stage implements Initializable {
         GridPane root = new MainViewController();
         this.setTitle("Youtube Visualizer");
         this.setScene(new Scene(root, 1280, 720));
+        this.setResizable(false);
         this.show();
     }
 }

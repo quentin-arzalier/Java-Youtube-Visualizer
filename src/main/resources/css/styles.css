@@ -1,0 +1,23 @@
+.mainPane{
+    -fx-background-color: #181818;
+}
+.mainThumb{
+    -fx-background-color: black;
+    -fx-cursor: none;
+    -fx-max-width: 640;
+    -fx-max-height: 360;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 640, 360;
+    -fx-background-position: center, center;
+}
+.title {
+    -fx-text-fill: lightgray;
+}
+
+.miniThumb {
+    -fx-max-width: 112;
+    -fx-max-height: 63;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 112, 63;
+    -fx-background-position: center, center;
+}
