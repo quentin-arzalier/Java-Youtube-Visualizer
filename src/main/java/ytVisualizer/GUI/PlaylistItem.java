@@ -2,7 +2,6 @@ package ytVisualizer.GUI;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
@@ -31,7 +30,7 @@ public class PlaylistItem extends GridPane {
         try {
             loader.load();
             title.setText(video.getTitle());
-            author.setText(video.getArtiste());
+            author.setText(video.getAuthor());
             getStylesheets().add(Objects.requireNonNull(getClass().getResource("/css/styles.css")).toExternalForm());
             String style = "-fx-background-image: url('" + video.getThumbnail() + "');";
             thumbnail.setStyle(style);
